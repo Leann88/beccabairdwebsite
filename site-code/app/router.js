@@ -11,6 +11,7 @@ Router.map(function() {
     this.resource('main.home', { path: 'Home' }, function() {});
   });
   this.route('Home');
+  this.route('choleric-vision');
 });
 
 export default Router;
