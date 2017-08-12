@@ -1,5 +1,5 @@
 @import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
-
+@import "navbar";
 @charset "utf-8";
 
 
@@ -99,6 +99,19 @@ img
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.home-image {
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+}
+
+.contact-link {
+    margin-bottom: 25px;
 }
 
 /* Turn off parallax scrolling for tablets and phones */
