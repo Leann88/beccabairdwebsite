@@ -7,6 +7,11 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.resource('Home', { path: '' }, function() {
+    this.resource('main.home', { path: 'Home' }, function() {});
+  });
+  this.route('Home');
+  this.route('choleric-vision');
 });
 
 export default Router;
