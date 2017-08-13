@@ -1,5 +1,6 @@
 @import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
 @import "navbar";
+@import "home";
 @charset "utf-8";
 
 
@@ -7,12 +8,6 @@
 {
     width: 12%;
     height: auto;
-}
-
-.jumbotron
-{
-    background-color: #DA1C5C!important;
-    color: white!important;
 }
 
 img 
@@ -48,15 +43,6 @@ img
 #project:hover .projectName 
 {
     opacity:1;
-}
-
-.to-portfolio {
-    background-color: #2E2789;
-    border: none;
-}
-
-.jumbotron-home {
-    
 }
 
 .pleaseWork1 {
@@ -102,15 +88,6 @@ img
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-.home-image {
-    margin: auto;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    position: absolute;
 }
 
 .contact-link {
