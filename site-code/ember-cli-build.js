@@ -20,5 +20,7 @@ module.exports = function(defaults) {
   // along with the exports of each module as its value.
   app.import('bower_components/glyphicons/styles/glyphicons.css');
   app.import('bower_components/bootstrap-sass/assets/javascripts/bootstrap.js');
+  app.import('bower_components/smartwizard/src/css/smart_wizard.css');
+  app.import('bower_components/smartwizard/src/js/jquery.smartWizard.js');
   return app.toTree();
 };
