@@ -45,50 +45,65 @@ img
     opacity:1;
 }
 
-.pleaseWork1 {
-    /* The image used */
-    background-image: url("/assets/img/pleaseWork1.png");
-
-    /* Set a specific height */
-    min-height: 500px; 
-    width:100%;
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.cv-header {
+    .parallax-content {
+        position: inherit !important;
+    }
 }
 
-.pleaseWork2 {
-    /* The image used */
-    background-image: url("/assets/img/pleaseWork2.png");
-
-    /* Set a specific height */
-    min-height: 500px; 
-    width:100%;
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+@media (max-width: 650px) {
+    .cv-header {
+         .parallax-content {
+            height: 60px !important;
+        }
+    }
 }
 
-.pleaseWork3 {
-    /* The image used */
-    background-image: url("/assets/img/pleaseWork3.png");
 
-    /* Set a specific height */
-    min-height: 500px; 
-    width:100%;
+// .pleaseWork1 {
+//     /* The image used */
+//     background-image: url("/assets/img/pleaseWork1.png");
 
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+//     /* Set a specific height */
+//     min-height: 500px; 
+//     width:100%;
+
+//     /* Create the parallax scrolling effect */
+//     background-attachment: fixed;
+//     background-position: center;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+// }
+
+// .pleaseWork2 {
+//     /* The image used */
+//     background-image: url("/assets/img/pleaseWork2.png");
+
+//     /* Set a specific height */
+//     min-height: 500px; 
+//     width:100%;
+
+//     /* Create the parallax scrolling effect */
+//     background-attachment: fixed;
+//     background-position: center;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+// }
+
+// .pleaseWork3 {
+//     /* The image used */
+//     background-image: url("/assets/img/pleaseWork3.png");
+
+//     /* Set a specific height */
+//     min-height: 500px; 
+//     width:100%;
+
+//     /* Create the parallax scrolling effect */
+//     background-attachment: fixed;
+//     background-position: center;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+// }
 
 .contact-link {
     margin-bottom: 25px;
