@@ -1,29 +1,31 @@
-.jumbotron
-{
-    background-color: #DA1C5C!important;
-    color: white!important;
-    position: relative;
-    margin: 0px;
-}
+.home {
+    .jumbotron
+        {
+            background-color: #DA1C5C!important;
+            color: white!important;
+            position: relative;
+            margin: 0px;
+        }
 
-.to-portfolio {
-    background-color: #2E2789;
-    border: none;
-}
+        .to-portfolio {
+            background-color: #2E2789;
+            border: none;
+        }
 
-.parallax-content {
-  height: 100%;
-  position: absolute;
-  
-  .scroll-speed-adjust {
-    min-height: 100%;
+        .parallax-content {
+          height: 100%;
+          position: absolute;
+          
+          .scroll-speed-adjust {
+            min-height: 100%;
 
-    img {
-        width: 100%;
-    }
-  }
-}
+            img {
+                width: 100%;
+            }
+          }
+        }
 
-.homepage {
-  position: relative
+        .homepage {
+          position: relative
+        }
 }

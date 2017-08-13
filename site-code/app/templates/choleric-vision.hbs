@@ -1,7 +1,10 @@
 <div class="container">
   <div class="row">
-    <div class="col-lg-12">
+    <div class="col-lg-12 cv-header">
       <h1 class="page-header">Choleric Vision</h1>
+      {{#parallax-content speed=0.25 height=125}}
+        <img src="/assets/img/strip.jpg">
+      {{/parallax-content}}
     </div>
   </div>
   <div class="row">
@@ -58,24 +61,48 @@
   </div>
 </div>
 <hr>
-<div class="container">
-  <div class="pleaseWork1"></div>
-  <div style="position:relative;">
-  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
-    <p>talk about alpha</p>
+<div class="timeline-container">
+   <div id="smartwizard" class="wizard_horizontal col-12">
+    <ul class="wizard_steps col-12">
+      <li class="col-4" id='li-1'>
+        <a href="#step-1">
+          <span class="step_no done"></span>
+          <span class="step_descr">Alpha</span>
+        </a>
+      </li>
+      <li class="col-4 done" id='li-2'>
+        <a href="#step-2">
+          <span class="step_no"></span>
+          <span class="step_descr">Beta</span>
+        </a>
+      </li>
+      <li class="col-4 done" id='li-3'>
+        <a href="#step-3">
+          <span class="step_no"></span>
+          <span class="step_descr">Final</span>
+        </a>
+      </li>
+    </ul>
+    <div>
+      <div id="step-1">
+        <div class="smart-wizard-step">
+          <h6 class="wizard-header">Alpha</h6>
+          
+        </div>
+      </div>
+      <div id="step-2">
+        <div class="smart-wizard-step">
+          <h6 class="wizard-header">Beta</h6>
+        </div>
+      </div>
+      <div id="step-3">
+        <div class="smart-wizard-step">
+          <h6 class="wizard-header">Final</h6>
+          <div class="col-12">
+            
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
-<div class="pleaseWork2"></div>
-<div style="position:relative;">
-  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
-    <p>talk about alpha</p>
-  </div>
-</div>
-<div class="pleaseWork3"></div>
-<div style="position:relative;">
-  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
-    <p>talk about alpha</p>
-  </div>
-</div>
-</div>
-<hr>
