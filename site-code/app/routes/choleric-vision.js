@@ -6,7 +6,11 @@ export default Ember.Route.extend({
     Ember.$('#smartwizard').smartWizard({
         enableAllSteps: true,
         noForwardJumping:false,
+        useURLhash: false,
+        selected: 0,
     });
+
+    window.scrollTo(0,0);
   },
 
   actions: {
