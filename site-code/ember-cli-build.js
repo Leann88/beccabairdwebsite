@@ -18,7 +18,11 @@ module.exports = function(defaults) {
   // modules that you would like to import into your application
   // please specify an object with the list of modules as keys
   // along with the exports of each module as its value.
-  app.import('bower_components/glyphicons/styles/glyphicons.css');
+  app.import('bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.tff');
+  app.import('bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.woff');
+  app.import('bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.woff2');
+
+
   app.import('bower_components/bootstrap-sass/assets/javascripts/bootstrap.js');
   app.import('bower_components/smartwizard/src/css/smart_wizard.css');
   app.import('bower_components/smartwizard/src/js/jquery.smartWizard.js');
