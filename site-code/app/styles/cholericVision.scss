@@ -19,6 +19,42 @@ box-shadow: none;
   padding: 5px;
 }
 
+.cv-header {
+    .parallax-content {
+        position: inherit !important;
+    }
+}
+
+@media (max-width: 650px) {
+    .parallax-content {
+        height: 60px !important;
+    }
+}
+
+.btn-toolbar {
+  background-image: url("/assets/img/bg.jpg") !important;
+  background-size: auto auto !important;
+  border: none;
+}
+
+.btn-group {
+
+  width: 100%;
+
+  .sw-btn-prev {
+      float: left;
+      background-color: #FFA1C0;
+      color: #fff;
+      border: none;
+  }
+
+  .sw-btn-next {
+      float: right !important;
+      background-color: #5957B5;
+      color: #fff;
+      border: none;
+  }
+}
 
 /*! The form wizard styles were taken and modified from the Gentelella template: https://github.com/puikinsh/gentelella */
 .wizard_horizontal ul.wizard_steps {
@@ -29,6 +65,7 @@ box-shadow: none;
   position: relative;
   width: 100%;
   padding: 0;
+  background-image: url("/assets/img/strip.jpg") !important;
 }
 .wizard_horizontal ul.wizard_steps li {
   text-align: center;
@@ -94,7 +131,7 @@ box-shadow: none;
 
 .wizard_horizontal ul.wizard_steps li.active a .step_no,
 .wizard_horizontal ul.wizard_steps li.active a:before {
-    background: #DA1C5C;
+  background: #DA1C5C;
 }
 
 .wizard_horizontal ul.wizard_steps li.done a:after,
