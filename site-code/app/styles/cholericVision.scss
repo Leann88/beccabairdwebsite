@@ -19,18 +19,6 @@ box-shadow: none;
   padding: 5px;
 }
 
-.cv-header {
-    .parallax-content {
-        position: inherit !important;
-    }
-}
-
-@media (max-width: 650px) {
-    .parallax-content {
-        height: 60px !important;
-    }
-}
-
 .btn-toolbar {
   background-image: url("/assets/img/bg.jpg") !important;
   background-size: auto auto !important;
