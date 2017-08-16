@@ -44,6 +44,14 @@ box-shadow: none;
   }
 }
 
+@media (min-width: 600px) {
+    .choleric-vision-video {
+         iframe {
+            height: 300px;
+        }
+    }
+}
+
 /*! The form wizard styles were taken and modified from the Gentelella template: https://github.com/puikinsh/gentelella */
 .wizard_horizontal ul.wizard_steps {
   display: flex;
