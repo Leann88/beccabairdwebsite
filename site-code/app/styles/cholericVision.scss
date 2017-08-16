@@ -31,25 +31,54 @@ box-shadow: none;
 
   .sw-btn-prev {
       float: left;
+      background-color: #5957B5;
+      color: #fff;
+      border: none;
+  }
+
+  .sw-btn-prev:hover {
+      background-color: #2E2789;
+      color: #fff;
+  }
+
+  .sw-btn-next {
+      float: right !important;
       background-color: #FFA1C0;
       color: #fff;
       border: none;
   }
 
-  .sw-btn-next {
-      float: right !important;
-      background-color: #5957B5;
+  .sw-btn-next:hover {
+      background-color: #DA1C5C;
       color: #fff;
-      border: none;
   }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 500px) {
+
+    .choleric-vision-carousel {
+      #myCarousel, .carousel-inner, .item, img{
+      height: 350px !important;
+      }
+    }
     .choleric-vision-video {
          iframe {
-            height: 300px;
+            height: 350px;
         }
     }
+}
+
+@media (min-width: 400px) and (max-width: 499px) {
+
+    .choleric-vision-video {
+         iframe {
+            height: 250px;
+        }
+    }
+}
+
+.CV-image {
+    width: 100%;
 }
 
 /*! The form wizard styles were taken and modified from the Gentelella template: https://github.com/puikinsh/gentelella */
