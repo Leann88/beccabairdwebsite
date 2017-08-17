@@ -7,11 +7,11 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.resource('Home', { path: '' }, function() {
-    this.resource('main.home', { path: 'Home' }, function() {});
+  this.route('Home', { path: '' }, function() {
+    this.route('main.home', { path: '/Home' }, function() {});
   });
-  this.route('Home');
-  this.route('choleric-vision');
+  this.route('Home', { path: '/Home' });
+  this.route('choleric-vision', { path: '/choleric-vision' });
   this.route('portfolio-index');
   this.route('by-the-numbers');
   this.route('project-oleum');
