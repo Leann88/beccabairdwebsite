@@ -56,12 +56,12 @@ box-shadow: none;
 
 @media (min-width: 500px) {
 
-    .choleric-vision-carousel {
+    .portfolio-carousel {
       #myCarousel, .carousel-inner, .item, img{
       height: 350px !important;
       }
     }
-    .choleric-vision-video {
+    .portfolio-video {
          iframe {
             height: 350px;
         }
@@ -70,7 +70,7 @@ box-shadow: none;
 
 @media (min-width: 400px) and (max-width: 499px) {
 
-    .choleric-vision-video {
+    .portfolio-video {
          iframe {
             height: 250px;
         }
