@@ -1,6 +1,57 @@
 // code based off https://codepen.io/keithclark/pen/JycFw
 
+@media only screen and (max-width: 767px) {
 .port-index {
+
+    img:last-of-type {
+      transform: translateZ(.4px) scale(.6) translateX(-104%) translateY(-40%) rotate(-5deg);
+    }
+
+    .slide{
+        width: 100%;
+        vertical-align: middle;
+        background-size: cover;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+    }
+    
+
+    .title {
+      width: 50%;
+      padding: 5%;
+      color: #FF87B0;
+    }
+
+    .slide:nth-child(2n) .title {
+      margin-left: 0;
+      margin-right: auto;
+    }
+
+    .slide:nth-child(2n+1) .title {
+      margin-left: auto;
+      margin-right: 0;
+    }
+
+    .header {
+      font-size: 175%;
+      color: #5957B5;
+      text-shadow: 0 2px 2px #000;
+    }
+
+    #by-the-numbers  {
+      background-image: url("/assets/img/portfolioBTN.jpg");
+    }
+
+    #scavenger-app{
+      background-image: url("/assets/img/portfolioGallery.jpg");
+    }
+
+  }
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+  .port-index {
 
     h1 {
        font-size: 200%
@@ -12,24 +63,12 @@
       color: #333;
     }
 
-    .slide {
-      position: relative;
-      padding: 15vh 10%;
-      // min-height: 10vh;
-      // width: 100vw;
-      box-sizing: border-box;
-      box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
-      transform-style: inherit;
-    }
-
     img {
-      // position: absolute;
       top: 50%;
       left: 35%;
       width: 45%;
       height: 40%;
       transform: translateZ(.25px) scale(.75) translateX(-94%) translateY(-100%) rotate(2deg);
-      // padding: 10px;
       border-radius: 5px;
       background: rgba(240,230,220, .7);
       box-shadow: 0 0 8px rgba(0, 0, 0, .7);
@@ -75,29 +114,56 @@
     }
 
     #choleric-vision {
-      background-image: url("/assets/img/portfolioCV.jpg");
       background-attachment: fixed;  
     }
 
     #by-the-numbers:before {
       background-image: url("/assets/img/portfolioBTN.jpg");
-      transform: translateZ(-1px) scale(2);
       z-index:-1;
     }
 
     #project-oleum {
-      background-image: url("/assets/img/portfolioPO.jpg");
       background-attachment: fixed;
     }
 
     #scavenger-app:before {
       background-image: url("/assets/img/portfolioGallery.jpg");
-      transform: translateZ(-1px) scale(2);
       z-index:-1;
     }
 
     #sushi-master {
-      background-image: url("/assets/img/portfolioSM.jpg");
       background-attachment: fixed;
+    }
+  }
+}
+
+.port-index {
+     h1 {
+       font-size: 200%
+    }
+
+    p {
+      font-size: 140%;
+      line-height: 150%;
+      color: #333;
+    }
+
+    .slide {
+      position: relative;
+      padding: 10vh 10%;
+      box-sizing: border-box;
+      box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
+      transform-style: inherit;
+    }
+
+    #choleric-vision {
+  background-image: url("/assets/img/portfolioCV.jpg");
+    }
+
+    #project-oleum {
+      background-image: url("/assets/img/portfolioPO.jpg");
+    }
+    #sushi-master {
+      background-image: url("/assets/img/portfolioSM.jpg");
     }
 }
