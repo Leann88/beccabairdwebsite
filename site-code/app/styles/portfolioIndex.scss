@@ -1,57 +1,137 @@
-.pleaseWork1 {
-    /* The image used */
-    background-image: url("/assets/img/pleaseWork1.png");
+// code based off https://codepen.io/keithclark/pen/JycFw
 
-    /* Set a specific height */
-    min-height: 200px; 
-    width:100%;
+//Styling for mobile
+@media only screen and (max-width: 767px) {
+  .port-index {
 
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    .slide{
+
+      padding: 8vh 10%;
+      width: 100%;
+      vertical-align: middle;
+      background-size: cover;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+    }
+
+    #by-the-numbers  {
+      background-image: url("/assets/img/portfolioBTN.jpg");
+    }
+
+    #scavenger-app{
+      background-image: url("/assets/img/portfolioGallery.jpg");
+    }
+
+  }
 }
 
-.pleaseWork2 {
-    /* The image used */
-    background-image: url("/assets/img/pleaseWork2.png");
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+  .port-index {
 
-    /* Set a specific height */
-    min-height: 200px; 
-    width:100%;
+    .slide {
+      padding: 15vh 10%;
+    }
 
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    img {
+      top: 50%;
+      left: 35%;
+      width: 45%;
+      height: 40%;
+      transform: translateZ(.25px) scale(.75) translateX(-94%) translateY(-100%) rotate(2deg);
+      border-radius: 5px;
+      background: rgba(240,230,220, .7);
+      box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+    }
+
+    .slide:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left:0;
+      right:0;
+    }
+
+    .slide, .slide:before {
+      background: 75% 75% / cover;  
+    }
+
+    #choleric-vision {
+      background-attachment: fixed;  
+    }
+
+    #by-the-numbers:before {
+      background-image: url("/assets/img/portfolioBTN.jpg");
+      z-index:-1;
+    }
+
+    #project-oleum {
+      background-attachment: fixed;
+    }
+
+    #scavenger-app:before {
+      background-image: url("/assets/img/portfolioGallery.jpg");
+      z-index:-1;
+    }
+
+    #sushi-master {
+      background-attachment: fixed;
+    }
+  }
 }
 
-.pleaseWork3 {
-    /* The image used */
-    background-image: url("/assets/img/pleaseWork3.png");
+//Styling for both view
+.port-index {
 
-    /* Set a specific height */
-    min-height: 200px; 
-    width:100%;
+    h1 {
+     font-size: 200%
+    }
 
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+    p {
+      font-size: 160%;
+      line-height: 150%;
+      color: #333;
+    }
 
-.project-name {
-    color:#ddd;
-    background-color:#282E34;
-    text-align:center;
-    padding:50px 60px;
-    text-align: justify;
-}
+    .title {
+      width: 50%;
+      padding: 5%;
+      color: #FF87B0;
+    }
 
-.project-descr-box {
-    height: 20%;
-    position: relative;
+    .slide:nth-child(2n) .title {
+      margin-left: 0;
+      margin-right: auto;
+    }
+
+    .slide:nth-child(2n+1) .title {
+      margin-left: auto;
+      margin-right: 0;
+    }
+
+    .header {
+      font-size: 175%;
+      color: #5957B5;
+      text-shadow: 0 2px 2px #000;
+    }
+
+    .slide {
+      position: relative;
+      box-sizing: border-box;
+      box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
+      transform-style: inherit;
+    }
+
+    #choleric-vision {
+      background-image: url("/assets/img/portfolioCV.jpg");
+    }
+
+    #project-oleum {
+      background-image: url("/assets/img/portfolioPO.jpg");
+    }
+
+    #sushi-master {
+      background-image: url("/assets/img/portfolioSM.jpg");
+    }
 }
