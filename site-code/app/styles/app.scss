@@ -64,13 +64,36 @@ img
     margin-bottom: 25px;
 }
 
-/* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1024px) {
-    .pleaseWork1, .pleaseWork2, .pleaseWork3 {
-        background-attachment: scroll;
-min-height:200px;
-
+@media only screen and (min-width: 770px) {
+    .4-set-links {
+        margin-bottom: 10px;
     }
+}
+@media only screen and (max-width: 769px) {
+    .contact-image {
+        width: 40%;
+        float: left;
+        margin: 10px;
+        border-radius: 30px;
+    }
+
+    .img1 {
+        float: left;
+    }
+
+    .img2 {
+        float: right;
+    }
+
+    .contact-image-center {
+        display: block;
+        margin: auto;
+        width: 60%;
+    }
+}
+
+.contact-image, .contact-image-center {
+    border-radius: 30px;
 }
 
 @import "ember-bootstrap/bootstrap";
